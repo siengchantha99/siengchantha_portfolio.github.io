@@ -7,12 +7,16 @@
 
 .container-fluid {
     width: 100%;
-    height: 100%;
-    background-color:gainsboro;
+    /* overflow: hidden; */
+    background-color:lightblue;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
     width: 100%;
+    flex: 1;
     height: 100%;
     background-color: burlywood;
     display: flex;
@@ -32,15 +36,21 @@
 .container .col-1,
 .container .col-2 {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
 .container .col-1 {
     width: 30%;
-    height: 50px;
+    height: 80px;
     text-align: center;
-    background-color: red;
+    /* background-color: red; */
+}
+
+.container .col-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .container .col-1 h1 {
@@ -54,7 +64,7 @@
 
 .container .col-2 {
     width: 70%;
-    height: 50px;
+    height: 80px;
     background-color: teal;
 }
 
@@ -86,14 +96,16 @@
 .nav-item .nav-link:hover {
     color: #fff;
 }
+
 .homepage {
     width: 100%;
-    height: 300px;
-    background-color: #f0f0f0; /* Add a background color to the homepage section */
+    height: 500px;
+    /* background-color: #f0f0f0; */
+    /* Add a background color to the homepage section */
 }
 
 .homepage .container {
-    height:300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +122,8 @@
 .homepage .col-1 {
     width: 30%;
     height: 100%;
-    background-color: #fff; /* Optional: Add a background color to the image container */
+    background-color: #fff;
+    /* Optional: Add a background color to the image container */
 }
 
 .homepage .col-1 img {
@@ -122,5 +135,53 @@
 .homepage .col-2 {
     width: 70%;
     height: 100%;
-    background-color: #eee; 
+    background-color: #eee;
+}
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color:#eee;
+    
+    /* padding: 20px 0; */
+}
+.footer .follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    /* margin-top: 5px;
+    margin-bottom: 5px; */
+}
+
+.footer .follow .follow_us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    /* margin-top: 5px; */
+}
+
+.footer .follow .link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 5px; */
+}
+.footer .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+footer .follow a {
+    width: 30px;
+    height: 30px;
+    /* margin: 0 5px;  */
 }
