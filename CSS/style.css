@@ -8,7 +8,7 @@
 .container-fluid {
     width: 100%;
     /* overflow: hidden; */
-    background-color:lightblue;
+    background-color: lightblue;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@
 
 .container {
     width: 100%;
-    flex: 1;
+    /* flex: 1; */
     height: 100%;
     background-color: burlywood;
     display: flex;
@@ -137,13 +137,15 @@
     height: 100%;
     background-color: #eee;
 }
-.footer{
+
+.footer {
     width: 100%;
     height: 150px;
-    background-color:#eee;
-    
+    background-color: #eee;
+
     /* padding: 20px 0; */
 }
+
 .footer .follow {
     display: flex;
     flex-direction: column;
@@ -172,6 +174,7 @@
     align-items: center;
     /* margin-top: 5px; */
 }
+
 .footer .body {
     display: flex;
     justify-content: center;
@@ -184,4 +187,92 @@ footer .follow a {
     width: 30px;
     height: 30px;
     /* margin: 0 5px;  */
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+
+    .container .col-1,
+    .container .col-2,
+    .homepage .col-1,
+    .homepage .col-2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-item .nav-link {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .nav-item .nav-link button {
+        width: auto;
+        height: 35px;
+        /* margin: 5px; */
+    }
+
+    .container .row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container .col-1 {
+        flex: 0 0 auto;
+        width: 30%;
+        text-align: left;
+        /* height: auto; */
+    }
+
+    .container .col-1 img {
+        width: 30%;
+        height: auto;
+    }
+
+    .container .col-2 {
+        flex: 0 0 auto;
+        width: 70%;
+        text-align: right;
+    }
+
+    .homepage {
+        height: auto;
+    }
+
+    .homepage .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .homepage .col-1 {
+        width: 30%;
+    }
+
+    .homepage .col-1 img {
+        height: auto;
+    }
+
+    .homepage .col-2 {
+        width: 70%;
+        height: auto;
+    }
+
+    .footer {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .footer .follow .link {
+        flex-wrap: wrap;
+    }
+
+    footer .follow a {
+        margin: 5px;
+    }
 }
