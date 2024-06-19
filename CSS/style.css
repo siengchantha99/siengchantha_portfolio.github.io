@@ -190,7 +190,7 @@ footer .follow a {
 }
 
 /* Responsive Styles */
-@media (max-width: 767px) {
+@media (min-width: 767px) {
 
     .container .col-1,
     .container .col-2,
